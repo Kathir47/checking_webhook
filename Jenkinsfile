@@ -31,7 +31,7 @@ pipeline {
         }
 
         stage('Deploy to Production') {
-            
+
             // when {
             //     branch 'main'
             // }
@@ -50,7 +50,7 @@ pipeline {
 
     post {
         success {
-            echo "Pipeline passed! App is live."
+            echo "Pipeline passed! App is live. Webhook is configured successfully"
         }
         failure {
             echo "Pipeline failed! Check the logs."
