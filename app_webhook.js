@@ -1,4 +1,10 @@
-console.log('configured the webhook 2')
+const http = require('http');
 
-// testing if the webhooks working or not
-// testing if the webhooks working or not
+const server = http.createServer((req, res) => {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.end('<h1>Hello from inside Docker!</h1><p>Port mapping is working!</p>');
+});
+
+server.listen(3000, () => {
+    console.log('Server running on port 3000');
+});
