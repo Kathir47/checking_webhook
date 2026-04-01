@@ -5,6 +5,6 @@ const server = http.createServer((req, res) => {
     res.end('<h1>Hello from inside Docker!</h1><p>Port mapping is working!</p>');
 });
 
-server.listen(3000, () => {
-    console.log('Server running on port 3000');
+server.listen(3333, () => {
+    console.log('Server running on port 3333asd3c');
 });
